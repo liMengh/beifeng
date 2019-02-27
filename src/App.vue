@@ -7,10 +7,10 @@
 
 <script>
   import FooterGuide from './components/FooterGuide/FooterGuide.vue'
-  import {reqFoodCategorys} from './api'
   export default {
     mounted(){
       this.$store.dispatch("getShops")
+      this.$store.dispatch("getCategorys")
     },
     components: {
       FooterGuide
