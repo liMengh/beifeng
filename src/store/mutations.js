@@ -1,4 +1,10 @@
-import{RECEIVE_ADDRESS, RECEIVE_FOODCATEGORYS, RECEIVE_SHOPS} from './mutation-types'
+import {
+  RECEIVE_ADDRESS,
+  RECEIVE_FOODCATEGORYS,
+  RECEIVE_SHOPS,
+  RECEIVE_SMS,
+  RECEIVE_PWD,
+} from './mutation-types'
 
 export default{
     [RECEIVE_ADDRESS](state,{address}){

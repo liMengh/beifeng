@@ -6,15 +6,20 @@
 </template>
 
 <script>
+import {mapActions} from 'vuex'
   import FooterGuide from './components/FooterGuide/FooterGuide.vue'
   export default {
     mounted(){
-      this.$store.dispatch("getShops")
       this.$store.dispatch("getCategorys")
+      this.$store.dispatch("getShops")
+      this.getAddress()
     },
     components: {
       FooterGuide
-    }
+    },
+    methods: {
+      ...mapActions(['getAddress'])
+    },
   }
 </script>
 
